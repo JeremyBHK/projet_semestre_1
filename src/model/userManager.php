@@ -99,7 +99,7 @@
 
         header('location: ./src/view/compte.php');
       }else{
-        echo 'wrong mdp or email fdp';
+        echo 'wrong mdp or email';
       }
     }
   }
