@@ -50,14 +50,6 @@
 
         if (isset($_POST['inscription'])) {
           $user = new userManager();
-          // $req_mail_exist = 'SELECT id FROM users WHERE email = :email';
-          // $arr = array(
-          //   'email' => $_POST['email']
-          // );
-          // echo '<br>';
-          // echo '<br>';
-          // var_dump($arr);
-          // $mail_exist = BDD::select($req_mail_exist, $arr, 'userManager');
           $mail_exist = $user->userExist($_POST['email']);
 
           if (empty($mail_exist)) {
@@ -69,6 +61,7 @@
               $user->setMdp($_POST['mdp']);
               // echo $_SESSION['email'];
               // problème ici ^
+              $user->inscription();
             }else{
               echo 'Mauvais ma biche';
             }
@@ -76,6 +69,50 @@
             echo 'Déjà là ma biche';
           }
         }
+
+        $user = new userManager();
+
+        if (isset($_POST['connexion'])) {
+          $co = new userManager();
+          $co->ifAccountExist();
+          echo 'good';
+        }else{
+          echo 'wrong';
+        }
+// DELETE
+        // $user_delete = $user->findOneById(4);
+        // $user_delete->delete();
+
+// UPDATE
+        // $update_user = $user->findOneById(2);
+        // echo "<br>";
+        // echo "<br>";
+        // var_dump($update_user);
+        // echo "<br>";
+        // echo "<br>";
+        // echo $update_user->getPrenom();
+        // echo "<br>";
+        // $update_user->setPrenom('obiwan');
+        // echo $update_user->getPrenom();
+        // echo "<br>";
+        // echo "<br>";
+        // echo $update_user->getNom();
+        // echo "<br>";
+        // $update_user->setNom('kenobi');
+        // echo $update_user->getNom();
+        // echo "<br>";
+        // echo "<br>";
+        // echo $update_user->getEmail();
+        // echo "<br>";
+        // $update_user->setEmail('obiwan@gmail.com');
+        // echo $update_user->getEmail();
+        // echo "<br>";
+        // echo "<br>";
+        // echo $update_user->getMdp();
+        // echo "<br>";
+        // $update_user->setMdp('obidecoruscant');
+        // echo $update_user->getMdp();
+        // $update_user->update();
       ?>
     </main>
   </body>
