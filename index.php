@@ -72,9 +72,13 @@
 
         $user = new userManager();
 
-        if (isset($_POST['connexion'])) {
+        if (isset($_REQUEST['connexion'])) {
+          $sql = 'SELECT * FROM users WHERE email = :email AND mdp = :mdp';
           $co = new userManager();
-          $co->ifAccountExist();
+          $co->setEmail($_POST['email']);
+          $co->setMdp($_POST['mdp']);
+          $co->connexion($sql);
+          // $co->ifAccountExist();
           echo 'good';
         }else{
           echo 'wrong';
