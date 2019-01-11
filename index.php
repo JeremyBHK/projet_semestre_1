@@ -26,7 +26,7 @@
         <input type="password" name="mdp" id="mdp" value="">
         <br>
         <input type="submit" name="inscription" value="Inscription">
-      </form>
+      </form> 
     </fieldset>
 
     <fieldset>
