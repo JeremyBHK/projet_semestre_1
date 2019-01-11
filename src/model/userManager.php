@@ -64,45 +64,22 @@
       return BDD::up($sql, $arr);
     }
 
-    public function connexion($sql){
-      $arr = $sql;
-      $arr->execute(array(
+    public function connexion(){
+      $sql = 'SELECT * FROM users WHERE email = :email AND mdp = :mdp';
+      $arr = array(
         'email' => $this->email,
         'mdp' => $this->mdp
-      ));
+      );
 
-      var_dump($arr);
-
-      $get_arr = $arr->fetchAll();
-
-      if (!empty($get_arr)) {
-        $_SESSION['email'] = $this->email;
-        $_SESSION['mdp'] = $this->mdp;
-      }else {
-        echo "mauvais email ou mdp";
-      }
-      // return BDD::select($sql, $arr, 'userManager');
+      return BDD::select($sql, $arr, 'userManager');
     }
 
     public function ifAccountExist(){
       $account_exist = self::connexion();
-      echo '<br>';
-      echo '<br>';
-      echo '<br>';
-      var_dump($account_exist);
-      echo '<br>';
-      echo '<br>';
-      echo '<br>';
 
       if (!empty($account_exist)) {
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo $_SESSION['email'];
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo $_SESSION['mdp'];
+        $_SESSION['email'] = $this->email;
+        $_SESSION['mdp'] = $this->mdp;
 
         header('location: ./src/view/compte.php');
       }else{
