@@ -60,12 +60,15 @@
 
             section{
               height: 100vh;
+              width: 100%;
+
               article{
                 height: inherit;
                 position: relative;
 
                 iframe{
                   height: inherit;
+                  width: 100%;
                 }
 
                 input{
