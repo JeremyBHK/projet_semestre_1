@@ -26,7 +26,7 @@
         <input type="password" name="mdp" id="mdp" value="">
         <br>
         <input type="submit" name="inscription" value="Inscription">
-      </form> 
+      </form>
     </fieldset>
 
     <fieldset>
@@ -74,15 +74,15 @@
       $user = new userManager();
 
 // CONNEXION
-      // if (isset($_REQUEST['connexion'])) {
-      //   $co = new userManager();
-      //   $co->setEmail($_POST['email']);
-      //   $co->setMdp($_POST['mdp']);
-      //   $co->ifAccountExist();
-      //   echo 'good';
-      // }else{
-      //   echo 'wrong';
-      // }
+      if (isset($_REQUEST['connexion'])) {
+        $co = new userManager();
+        $co->setEmail($_POST['email']);
+        $co->setMdp($_POST['mdp']);
+        $co->ifAccountExist();
+        echo 'good';
+      }else{
+        echo 'wrong';
+      }
 
 // DELETE
       // $user_delete = $user->findOneById(6);
