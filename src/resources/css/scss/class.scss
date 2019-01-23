@@ -71,10 +71,10 @@
   margin-right: auto;
 }
 
-$i: 10;
+$i: 5;
 @while $i <= 100{
   .marginTop#{$i}{margin-top: unquote($i + "px");}
-  $i: $i + 10;
+  $i: $i + 5;
 }
 
 $i: 0;
@@ -83,10 +83,10 @@ $i: 0;
   $i: $i + 1;
 }
 
-$i: 10;
+$i: 5;
 @while $i <= 100{
   .marginBottom#{$i}{margin-bottom: unquote($i + "px");}
-  $i: $i + 10;
+  $i: $i + 5;
 }
 
 $i: 0;
@@ -137,16 +137,28 @@ $i: 0;
   padding: 0 !important;
 }
 
-$i: 10;
+$i: 5;
 @while $i <= 100{
   .paddingTop#{$i}{padding-top: unquote($i + "px");}
-  $i: $i + 10;
+  $i: $i + 5;
 }
 
-$i: 10;
+$i: 5;
+@while $i <= 100{
+  .paddingRight#{$i}{padding-right: unquote($i + "px");}
+  $i: $i + 5;
+}
+
+$i: 5;
 @while $i <= 100{
   .paddingBottom#{$i}{padding-bottom: unquote($i + "px");}
-  $i: $i + 10;
+  $i: $i + 5;
+}
+
+$i: 5;
+@while $i <= 100{
+  .paddingLeft#{$i}{padding-left: unquote($i + "px");}
+  $i: $i + 5;
 }
 
 $i: 2;
@@ -167,11 +179,11 @@ $i: 2;
   .background-#{$color}{background-color: unquote($color);}
 }
 
-@each $nameColor, $backColor in ("grey", #e4ded5), ("blue", deepskyblue), ("brown", #603f31){
+@each $nameColor, $backColor in ("grey", #e4ded5), ("blue", deepskyblue), ("brown", #603f31), ('neon-blue', #545CFF){
   .background-#{$nameColor}{background-color: $backColor;}
 }
 
-@each $colors, $hex in ("brown", #603f31), ("beige", #e4ded5), ("green", #679519), (lighterGreen, #20ffe1), (blanc, #ffffff), (noir, #000000){
+@each $colors, $hex in ("brown", #603f31), ("beige", #e4ded5), ("green", #679519), (lighterGreen, #20ffe1), (blanc, #ffffff), (noir, #000000), ('neon-blue', #545CFF){
   .#{$colors}{color: $hex;}
 }
 
@@ -256,6 +268,7 @@ $i: 2;
 .vertical-align{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* Radius */
@@ -276,6 +289,12 @@ $weight: 300;
 @while $weight <= 900{
   .weight-#{$weight}{font-weight: $weight};
   $weight: $weight + 100;
+}
+
+$size: 8;
+@while $size <= 30{
+  .size#{$size}{font-size: unquote($size + "px") !important};
+  $size: $size + 1;
 }
 
 /* style de police */
@@ -302,4 +321,10 @@ $opacity: 0;
 
 .cursor{
   cursor: pointer;
+}
+
+/* Clear float */
+
+.clear{
+  clear: both;
 }

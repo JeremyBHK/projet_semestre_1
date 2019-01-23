@@ -81,7 +81,7 @@
         $_SESSION['email'] = $this->email;
         $_SESSION['mdp'] = $this->mdp;
 
-        header('location: ./src/view/home.php');
+        header('location: ?p=home');
       }else{
         echo 'wrong mdp or email';
       }
