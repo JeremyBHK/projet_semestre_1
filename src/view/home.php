@@ -17,7 +17,7 @@
           <h2 class="marginBottom20">Modifier le profile</h2>
           <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Prénom</label><br>
-          <input id="test-input" type="text" class="height25">
+          <input type="text" class="height25">
           <br>
           <br>
           <label for="nom">Nom</label><br>
@@ -31,7 +31,7 @@
           <h2 class="marginBottom20">Modifier l'email</h2>
           <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Adresse email</label><br>
-          <input id="test-input" type="email" class="height25">
+          <input type="email" class="height25">
           <br>
           <br>
           <input type="submit" value="">
@@ -41,8 +41,8 @@
         <div class="modal relative">
           <h2 class="marginBottom20">Ajouter un vehicule</h2>
           <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
-          <label for="prénom">Marque : </label><br>
-          <input id="test-input" type="text" class="height25">
+          <label for="prénom">Marque</label><br>
+          <input type="text" class="height25">
           <br>
           <br>
           <label for="nom">Modèle</label><br>
@@ -56,7 +56,29 @@
           <h2 class="marginBottom20">Modifier le mot de passe</h2>
           <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Mot de passe</label><br>
-          <input id="test-input" type="password" class="height25">
+          <input type="password" class="height25">
+          <br>
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
+      <div class="container-modal z6 vertical-align house-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Ajouter un domicile</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Adresse du domicile</label><br>
+          <input type="text" class="height25">
+          <br>
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
+      <div class="container-modal z6 vertical-align work-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Ajouter un lieu de travail</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Adresse du lieu de travail</label><br>
+          <input id="test-input" type="text" class="height25">
           <br>
           <br>
           <input type="submit" value="">
@@ -135,15 +157,15 @@
             </section>
             <section class="reglage__section">
               <article class="">
-                <div class="background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
-                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/home.svg" alt="icon de maison">
+                <div id="house" class="background-gris-bloc open-modal house__ajout vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
+                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/home-noir.svg" alt="icon de maison">
                   <div class="align-left">
                     <p class="noir size13">Domicile</p>
                     <!-- <p class="blanc size13">26 Rue Flocon</p> -->
                   </div>
                 </div>
-                <div class="background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
-                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/work.svg" alt="icon de travail">
+                <div id="work" class="background-gris-bloc open-modal work__ajout vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
+                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/work-noir.svg" alt="icon de travail">
                   <div class="align-left">
                     <p class="noir size13">Travail</p>
                     <!-- <p class="blanc size13">21 Rue Erard</p> -->
