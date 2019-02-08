@@ -44,6 +44,13 @@
                     margin: auto;
                     padding: 0;
                 }
+
+                &[type='email']:focus, &[type='text']:focus, &[type='password']:focus{
+                    outline: none;
+                    border-bottom: none;
+                    border-radius: 10px;
+                    box-shadow: 0 0 1pt 1pt $bleuSwigo;
+                }
             }
         }
     }

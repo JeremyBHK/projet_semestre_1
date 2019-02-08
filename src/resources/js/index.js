@@ -15,7 +15,7 @@ $(document).ready(function(){
     $('body').css({"overflow-y": "hidden"});
   }
 
-  var arr = ['ajout-vehicle__card', 'name__modif', 'mdp__modif', 'mail__modif'];
+  var arr = ['ajout-vehicle__card', 'name__modif', 'mdp__modif', 'mail__modif', 'house__ajout', 'work__ajout'];
   $('.open-modal').click(function(){
     for (var i = 0; i < arr.length; i++){
       if ($(this).hasClass(arr[i])){
