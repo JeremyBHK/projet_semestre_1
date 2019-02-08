@@ -7,7 +7,6 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
     <link rel="stylesheet" type="text/css" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css">
-    <link rel="stylesheet" href="/ICAN3WEB/projet_semestre_1/src/resources/css/css/class.css">
     <link rel="stylesheet" href="/ICAN3WEB/projet_semestre_1/src/resources/css/css/index.css">
     <title>Home Page</title>
   </head>

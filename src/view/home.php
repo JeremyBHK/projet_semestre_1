@@ -12,11 +12,61 @@
   </head>
   <body>
     <main>
+      <div class="container-modal z6 vertical-align name-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Modifier le profile</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Prénom</label><br>
+          <input id="test-input" type="text" class="height25">
+          <br>
+          <br>
+          <label for="nom">Nom</label><br>
+          <input type="text" class="height25">
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
+      <div class="container-modal z6 vertical-align mail-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Modifier l'email</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Adresse email</label><br>
+          <input id="test-input" type="email" class="height25">
+          <br>
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
+      <div class="container-modal z6 vertical-align vehicle-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Ajouter un vehicule</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Marque : </label><br>
+          <input id="test-input" type="text" class="height25">
+          <br>
+          <br>
+          <label for="nom">Modèle</label><br>
+          <input type="text" class="height25">
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
+      <div class="container-modal z6 vertical-align mdp-modal">
+        <div class="modal relative">
+          <h2 class="marginBottom20">Modifier le mot de passe</h2>
+          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <label for="prénom">Mot de passe</label><br>
+          <input id="test-input" type="password" class="height25">
+          <br>
+          <br>
+          <input type="submit" value="">
+        </div>
+      </div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide statistique__slide relative z4">
             <nav class="vertical-align">
-              <h2>Statistique</h2>
+              <h2 class="neon-blue">Statistique</h2>
             </nav>
             <section class="oHidden">
               <svg class="marginTop40 marginBottom40" width="259" height="153" viewBox="0 0 259 153" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,13 +116,13 @@
             </section>
           </div>
           <div class="swiper-slide home__slide">
-            <nav class="z1">
-              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/stat.png" alt="logo indicateur menant vers les stats">
-              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/User.png" alt="logo par defaut de l'utilisateur">
+            <nav class="z5">
+              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/stat.svg" alt="logo indicateur menant vers les stats">
+              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/logo.svg" alt="logo Swigo">
+              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/User.svg" alt="logo par defaut de l'utilisateur">
             </nav>
-            <section>
+            <section class="">
               <article class="">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10504.561230316252!2d2.376437190923316!3d48.836462342275546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67215630ec317%3A0x1d12150f4acb78f8!2sQuartier+de+Bercy%2C+75012+Paris!5e0!3m2!1sfr!2sfr!4v1547332500936" width="800" height="600" allowfullscreen></iframe> -->
                 <div id='map'></div>
                 <div id="geocoder" class="geocoder"></div>
                 <div class="z3 box-shadow-white"></div>
@@ -83,75 +133,107 @@
                 </div>
               </article>
             </section>
+            <section class="reglage__section">
+              <article class="">
+                <div class="background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
+                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/home.svg" alt="icon de maison">
+                  <div class="align-left">
+                    <p class="noir size13">Domicile</p>
+                    <!-- <p class="blanc size13">26 Rue Flocon</p> -->
+                  </div>
+                </div>
+                <div class="background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
+                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/work.svg" alt="icon de travail">
+                  <div class="align-left">
+                    <p class="noir size13">Travail</p>
+                    <!-- <p class="blanc size13">21 Rue Erard</p> -->
+                  </div>
+                </div>
+              </article>
+              <article class="container-filtre marginTop20">
+                <article class="connecteur">
+                  <h2 class="marginBottom20 align-left">Les connecteurs :</h2>
+                  <div class="container-bloc-connecteur">
+                    <div class="container-connecteur marginBottom20">
+                      <div class="bloc-container background-gris-bloc">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/domestiqueUE.svg" alt="icon prise domestique UE">
+                        <p class="size12 marginTop5">Domestique UE</p>
+                      </div>
+                    </div>
+                    <div class="container-connecteur marginBottom20">
+                      <div class="bloc-container background-gris-bloc">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-2-gris.svg" alt="icon prise domestique UE">
+                        <p class="size12 marginTop5">Type 2</p>
+                      </div>
+                    </div>
+                    <div class="container-connecteur marginBottom20">
+                      <div class="bloc-container background-gris-bloc">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-3C-gris.svg" alt="icon prise domestique UE">
+                        <p class="size12 marginTop5">Type 3C</p>
+                      </div>
+                    </div>
+                    <div class="container-connecteur marginBottom20">
+                      <div class="bloc-container background-gris-bloc">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-1-gris.svg" alt="icon prise domestique UE">
+                        <p class="size12 marginTop5">Type 1</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="connecteur container-vitesses">
+                  <div class="autoWI">
+                    <h2 class="marginBottom20 align-left">Les vitesses :</h2>
+                    <div class="container-type-bloc">
+                      <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/standard.svg" alt="icon de travail">
+                        <div class="align-left">
+                          <p class="size13 marginBottom10">Standard</p>
+                          <p class="size13">2 - 5KW</p>
+                        </div>
+                      </div>
+                      <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/semi-acceleree.svg" alt="icon de travail">
+                        <div class="align-left">
+                          <p class="size13 marginBottom10">Semi-accélérée</p>
+                          <p class="size13">5 - 16KW</p>
+                        </div>
+                      </div>
+                      <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/acceleree.svg" alt="icon de travail">
+                        <div class="align-left">
+                          <p class="size13 marginBottom10">Accelerée</p>
+                          <p class="size13">16 - 30KW</p>
+                        </div>
+                      </div>
+                      <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
+                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/rapide.svg" alt="icon de travail">
+                        <div class="align-left">
+                          <p class="size13 marginBottom10">Rapide</p>
+                          <p class="size13">30 - 135KW</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </article>
+            </section>
           </div>
           <div class="swiper-slide compte__slide relative z4">
             <nav class="vertical-align">
               <div class="photo-user marginBottom20"></div>
               <h2 class="size24">Cristina Gottardi</h2>
             </nav>
-            <section class="displayNone">
-              <article class="">
-                <h2 class="align-left marginTop30 marginBottom10">Mes véhicules</h2>
-                <div class="underline"></div>
-                <div class="vehicle__card background-neon-blue vertical-align paddingTop15 paddingBottom15 marginTop20">
-                  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect width="36" height="36" fill="url(#pattern0)"/>
-                    <defs>
-                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0" transform="scale(0.00666667)"/>
-                    </pattern>
-                    <image id="image0" width="150" height="150" xlink:href="data:image/png;base64,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"/>
-                    </defs>
-                  </svg>
-                  <div class="align-left">
-                    <p class="blanc size13 marginBottom10">Peugeot</p>
-                    <p class="blanc size13">Ion</p>
-                  </div>
-                </div>
-              </article>
-              <article class="">
-                <h2 class="align-left marginTop30 marginBottom10">Mes cartes</h2>
-                <div class="underline"></div>
-                <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10 marginTop20">
-                  <p class="blanc size13 paddingLeft15">1234 5678 1234 5678</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
-                </div>
-                <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10 marginTop10 marginBottom10">
-                  <p class="blanc size13 paddingLeft15">Chargemap</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
-                </div>
-                <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10">
-                  <p class="blanc size13 paddingLeft15">Carte Total</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
-                </div>
-              </article>
-              <article class="">
-                <h2 class="align-left marginTop30 marginBottom10">Badges</h2>
-                <div class="underline"></div>
-                <div class="container-badge paddingTop20 paddingBottom20">
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle marginTop10 marginBottom10"></div>
-                  <div class="badge-circle marginTop10 marginBottom10"></div>
-                  <div class="badge-circle marginTop10 marginBottom10"></div>
-                  <div class="badge-circle marginTop10 marginBottom10"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                  <div class="badge-circle"></div>
-                </div>
-              </article>
-            </section>
             <section class="compte-modification">
               <article class="">
                 <h2 class="align-left marginTop30 marginBottom10">Profils</h2>
                 <div class="underline"></div>
-                <div class="carte__card ajout__card mail__modif vertical-align paddingTop10 paddingBottom10 marginTop20 marginBottom10">
+                <div id="mail" class="carte__card ajout__card open-modal mail__modif vertical-align paddingTop10 paddingBottom10 marginTop20 marginBottom10">
                   <p class="blanc size13 paddingLeft15 neon-blue align-left">john.doe@gmail.com</p>
                 </div>
-                <div class="carte__card mdp__modif vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
+                <div id="name" class="carte__card open-modal name__modif vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
+                  <p class="blanc size13 paddingLeft15">Nom et prénom</p>
+                </div>
+                <div id="mdp" class="carte__card open-modal mdp__modif vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
                   <p class="blanc size13 paddingLeft15">Mot de passe</p>
                 </div>
                 <div class="carte__card deconnexion vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
@@ -169,7 +251,7 @@
                       <p class="blanc size13">Ion</p>
                     </div>
                   </div>
-                  <div class="vehicle__card ajout-vehicle__card vertical-align paddingTop15 paddingBottom15 marginTop20">
+                  <div id="vehicle" class="vehicle__card ajout-vehicle__card open-modal vertical-align paddingTop15 paddingBottom15 marginTop20">
                     <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/add2.svg" alt="">
                   </div>
                 </div>
@@ -193,15 +275,26 @@
                   <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/add2.svg" alt="icon d'ajout">
                 </div>
               </article>
+              <article class="">
+                <h2 class="align-left marginTop30 marginBottom10">Badges</h2>
+                <div class="underline"></div>
+                <div class="container-badge paddingTop20 paddingBottom20">
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle marginTop10 marginBottom10"></div>
+                  <div class="badge-circle marginTop10 marginBottom10"></div>
+                  <div class="badge-circle marginTop10 marginBottom10"></div>
+                  <div class="badge-circle marginTop10 marginBottom10"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                  <div class="badge-circle"></div>
+                </div>
+              </article>
             </section>
           </div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-          <div class="swiper-slide">Slide 10</div>
         </div>
       </div>
     </main>
