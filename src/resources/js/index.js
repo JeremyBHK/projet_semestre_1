@@ -3,7 +3,7 @@ $(document).ready(function(){
     autoHeight: true,
   });
 
-  $("#geocoder").click(function(){
+  $("#menu-reglage").click(function(){
     $(".reglage__section").css({"transform": "translateY(0)", "opacity": "1", "z-index": "4"});
   });
 
