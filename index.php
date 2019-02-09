@@ -21,6 +21,10 @@
     //   $ctrl->appelRender('home', array());
     //     echo "mabite2";
     //     break;
+    case 'onboarding':
+      $ctrl = new UserController();
+      $ctrl->appelRender('onboarding', array());
+      break;
     default:
       // Page d'accueil -> aucun paramètre "p" reçu
       $ctrl = new UserController();
