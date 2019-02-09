@@ -147,11 +147,9 @@
               <article class="">
                 <div id='map'></div>
                 <div id="geocoder" class="geocoder"></div>
-                <div class="z3 box-shadow-white"></div>
+                <!-- <div class="z3 box-shadow-white"></div> -->
                 <div class="swiper-haut z3">
-                  <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.4926 0.417896L1.41154 9.33371C0.858161 9.87701 0.858161 10.7547 1.41154 11.298C1.96492 11.8413 2.85884 11.8413 3.41221 11.298L10.0811 4.76435L10.0811 21.6069C10.0811 22.3731 10.7196 23 11.5001 23C12.2805 23 12.919 22.3731 12.919 21.6069L12.919 4.76435L19.5737 11.298C20.1271 11.8413 21.021 11.8413 21.5744 11.298C21.8582 11.0194 21.9859 10.6711 21.9859 10.3089C21.9859 9.94667 21.844 9.59839 21.5744 9.31977L12.4933 0.403966C11.9541 -0.125409 11.046 -0.125411 10.4926 0.417896Z" fill="#333333"/>
-                  </svg><p>Swiper vers le haut pour les réglages</p>
+                  <img id="menu-reglage" src="/ICAN3WEB/projet_semestre_1/src/resources/img/parametre.svg" alt="engrenage de paramètre">
                 </div>
               </article>
             </section>
