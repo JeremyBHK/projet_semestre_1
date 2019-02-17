@@ -1,38 +1,38 @@
-<main>
-  <fieldset>
-  <legend>Inscription</legend>
+<article id="container-conn-ins" class="vertical-align">
+  <img id='logo-conn-ins' src="/ICAN3WEB/projet_semestre_1/src/resources/img/logo-complet.svg" alt="logo Swigo en version entière">
 
-  <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-    <label for="nom">Prénom</label>
-    <input type="text" name="prenom" id="prenom" value="">
-    <br>
-    <label for="nom">Nom</label>
-    <input type="text" name="nom" id="nom" value="">
-    <br>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" value="">
-    <br>
-    <label for="mdp">Mot de passe</label>
-    <input type="password" name="mdp" id="mdp" value="">
-    <br>
-    <input type="submit" name="inscription" value="Inscription">
-  </form>
-</fieldset>
+  <div id="switch-conn-ins" class="marginTop50">
+    <p id="switch-ins" class="align-right">Inscription</p>
+    <p id="switch-conn" class="align-left">Connexion</p>
+  </div>
 
-<fieldset>
-  <legend>Connexion</legend>
+  <fieldset id="ins" class="displayNone">
+    <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+      <input type="text" name="prenom" id="prenom" value="" placeholder="Prénom">
+      <br>
+      <input type="text" name="nom" id="nom" value="" placeholder="Nom">
+      <br>
+      <input type="email" name="email" id="email" value="" placeholder="Email">
+      <br>
+      <input type="password" name="mdp" id="mdp" value="" placeholder="Mot de passe">
+      <br>
+      <input type="submit" name="inscription" value="Inscription">
+    </form>
+  </fieldset>
 
-  <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" value="">
-    <br>
-    <label for="mdp">Mot de passe</label>
-    <input type="password" name="mdp" id="mdp" value="">
-    <br>
-    <input type="submit" name="connexion" value="Connexion">
-  </form>
-</fieldset>
-</main>
+  <fieldset id="conn">
+    <form action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
+      <!-- <label for="email">Email</label> -->
+      <input type="email" name="email" id="email" value="" placeholder="Email">
+      <br>
+      <!-- <label for="mdp">Mot de passe</label> -->
+      <input type="password" name="mdp" id="mdp" value="" placeholder="Mot de passe">
+      <br>
+      <input type="submit" name="connexion" value="Se connecter">
+    </form>
+  </fieldset>
+</article>
+
 <?php
   if (isset($_POST['inscription'])) {
     $user = new UserController();

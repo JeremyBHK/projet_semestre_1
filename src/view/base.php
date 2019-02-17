@@ -17,6 +17,7 @@
     <script src="/ICAN3WEB/projet_semestre_1/src/resources/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
     <script src="/ICAN3WEB/projet_semestre_1/src/resources/js/index.js"></script>
+    <script src="/ICAN3WEB/projet_semestre_1/src/resources/js/connexion_inscription.js"></script>
     <script src="/ICAN3WEB/projet_semestre_1/src/resources/js/onboarding.js"></script>
   </body>
 </html>
