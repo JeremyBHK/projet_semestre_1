@@ -37,7 +37,7 @@
           <input type="submit" value="">
         </div>
       </div>
-      <form action="<?= $_SERVER['PHP_SELF'];?>?p=home" method="post">
+      <form action="<?= $_SERVER['PHP_SELF']?>?p=home" method="post">
         <div class="container-modal z6 vertical-align vehicle-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Ajouter un vehicule</h2>
@@ -49,18 +49,18 @@
             <label for="nom">Modèle</label><br>
             <input type="text" name="modele" id="modele" class="height25">
             <br>
-            <input type="submit" value="" name="addCar">
+            <input type="submit" value="Valider" id="addCar" name="addCar">
           </div>
         </div>
       </form>
       <?php 
+          echo 'salut';
+          var_dump($_REQUEST);
           if (isset($_POST['addCar'])){
             $car = new VoitureController();
             $addCar = $car->setCar($_POST);
-            
-            // header('location: ?p=home');
           } else{
-            echo 'Marche pas';
+            echo 'Ne rentre pas dans le if';
           }
       ?>
       <div class="container-modal z6 vertical-align mdp-modal">
@@ -88,14 +88,12 @@
         </div>
       </form>
       <?php 
-          if (isset($_POST['addAdresse'])){
-            $car = new DomicileController();
-            $addCar = $car->setDomicile($_POST);
-            
-            // header('location: ?p=home');
-          } else{
-            echo 'Marche pas';
-          }
+          // if (isset($_POST['addAdresse'])){
+          //   $car = new DomicileController();
+          //   $addCar = $car->setDomicile($_POST);
+          // } else{
+          //   echo 'Marche pas';
+          // }
       ?>
       <div class="container-modal z6 vertical-align work-modal">
         <div class="modal relative">
