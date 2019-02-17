@@ -16,11 +16,6 @@
       $ctrl = new UserController();
       $ctrl->appelRender('home', array());
       break;
-    // case 'index':
-    //   $ctrl = new UserController();
-    //   $ctrl->appelRender('home', array());
-    //     echo "mabite2";
-    //     break;
     case 'onboarding':
       $ctrl = new UserController();
       $ctrl->appelRender('onboarding', array());
@@ -29,7 +24,6 @@
       // Page d'accueil -> aucun paramètre "p" reçu
       $ctrl = new UserController();
       $ctrl->appelRender('connexion_inscription', array());
-      echo "ma";
       break;
   }
 ?>
