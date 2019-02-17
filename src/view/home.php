@@ -37,20 +37,32 @@
           <input type="submit" value="">
         </div>
       </div>
-      <div class="container-modal z6 vertical-align vehicle-modal">
-        <div class="modal relative">
-          <h2 class="marginBottom20">Ajouter un vehicule</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
-          <label for="prénom">Marque</label><br>
-          <input type="text" class="height25">
-          <br>
-          <br>
-          <label for="nom">Modèle</label><br>
-          <input type="text" class="height25">
-          <br>
-          <input type="submit" value="">
+      <form action="<?= $_SERVER['PHP_SELF'];?>?p=home" method="post">
+        <div class="container-modal z6 vertical-align vehicle-modal">
+          <div class="modal relative">
+            <h2 class="marginBottom20">Ajouter un vehicule</h2>
+            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <label for="prénom">Marque</label><br>
+            <input type="text" name="marque" id="marque" class="height25">
+            <br>
+            <br>
+            <label for="nom">Modèle</label><br>
+            <input type="text" name="modele" id="modele" class="height25">
+            <br>
+            <input type="submit" value="" name="addCar">
+          </div>
         </div>
-      </div>
+      </form>
+      <?php 
+          if (isset($_POST['addCar'])){
+            $car = new VoitureController();
+            $addCar = $car->setCar($_POST);
+            
+            // header('location: ?p=home');
+          } else{
+            echo 'Marche pas';
+          }
+      ?>
       <div class="container-modal z6 vertical-align mdp-modal">
         <div class="modal relative">
           <h2 class="marginBottom20">Modifier le mot de passe</h2>
@@ -62,17 +74,29 @@
           <input type="submit" value="">
         </div>
       </div>
-      <div class="container-modal z6 vertical-align house-modal">
-        <div class="modal relative">
-          <h2 class="marginBottom20">Ajouter un domicile</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
-          <label for="prénom">Adresse du domicile</label><br>
-          <input type="text" class="height25">
-          <br>
-          <br>
-          <input type="submit" value="">
+      <form action="<?= $_SERVER['PHP_SELF'];?>?p=home" method='post'>
+        <div class="container-modal z6 vertical-align house-modal">
+          <div class="modal relative">
+            <h2 class="marginBottom20">Ajouter un domicile</h2>
+            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <label for="prénom">Adresse du domicile</label><br>
+            <input type="text" name="adresse" id="adresse" class="height25">
+            <br>
+            <br>
+            <input type="submit" name="addAdresse" value="">
+          </div>
         </div>
-      </div>
+      </form>
+      <?php 
+          if (isset($_POST['addAdresse'])){
+            $car = new DomicileController();
+            $addCar = $car->setDomicile($_POST);
+            
+            // header('location: ?p=home');
+          } else{
+            echo 'Marche pas';
+          }
+      ?>
       <div class="container-modal z6 vertical-align work-modal">
         <div class="modal relative">
           <h2 class="marginBottom20">Ajouter un lieu de travail</h2>
@@ -426,6 +450,5 @@
        trackUserLocation: true
     }));
     </script>
-
   </body>
 </html>

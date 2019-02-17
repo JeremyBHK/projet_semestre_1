@@ -25,6 +25,9 @@
       $req = self::$bdd->prepare($sql);
       $req->execute($params);
 
+      var_dump($params);
+      // var_dump($req->debugDumpParams());
+
       return $req->rowCount();
     }
 
@@ -36,6 +39,7 @@
     }
 
     public static function insert($sql, $params){
+      // var_dump($params);
       return self::prepareExecute($sql, $params);
     }
 
