@@ -1,6 +1,3 @@
-<?php
-  session_start();
-?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -26,17 +23,32 @@
           <input type="submit" value="">
         </div>
       </div>
-      <div class="container-modal z6 vertical-align mail-modal">
-        <div class="modal relative">
-          <h2 class="marginBottom20">Modifier l'email</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
-          <label for="prénom">Adresse email</label><br>
-          <input type="email" class="height25">
-          <br>
-          <br>
-          <input type="submit" value="">
+      <form action="?p=home">
+        <div class="container-modal z6 vertical-align mail-modal">
+          <div class="modal relative">
+            <h2 class="marginBottom20">Modifier l'email</h2>
+            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <label for="prénom">Adresse email</label><br>
+            <input type="email" name="email" id="email" class="height25">
+            <br>
+            <br>
+            <input type="submit" name="upEmail" value="upEmail">
+          </div>
         </div>
-      </div>
+      </form>
+      <?php 
+        if (isset($_POST['upEmail'])) {
+          $user = new userManager();
+          $update_user = $user->findOneByEmail($_SESSION['email']);
+          var_dump($update_user);
+          $update_user->setEmail($_POST['email']);
+          $update_user->getEmail();
+          $update_user->update();
+        } else {
+          echo 'ne rentre pas dans le if...';
+        }
+        
+      ?>
       <form action="<?= $_SERVER['PHP_SELF']?>?p=home" method="post">
         <div class="container-modal z6 vertical-align vehicle-modal">
           <div class="modal relative">
@@ -54,14 +66,14 @@
         </div>
       </form>
       <?php 
-          echo 'salut';
-          var_dump($_REQUEST);
-          if (isset($_POST['addCar'])){
-            $car = new VoitureController();
-            $addCar = $car->setCar($_POST);
-          } else{
-            echo 'Ne rentre pas dans le if';
-          }
+          // echo 'salut';
+          // var_dump($_REQUEST);
+          // if (isset($_POST['addCar'])){
+          //   $car = new VoitureController();
+          //   $addCar = $car->setCar($_POST);
+          // } else{
+          //   echo 'Ne rentre pas dans le if';
+          // }
       ?>
       <div class="container-modal z6 vertical-align mdp-modal">
         <div class="modal relative">

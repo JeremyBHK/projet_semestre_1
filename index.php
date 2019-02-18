@@ -1,4 +1,6 @@
 <?php
+  session_start();
+
   require_once "src/class/bdd.php";
   require_once "src/class/util.php";
   require_once "src/orm/user.php";
@@ -21,6 +23,7 @@
     case 'home':
       $ctrl = new UserController();
       $ctrl->appelRender('home', array());
+      var_dump($_SESSION);
       break;
     case 'onboarding':
       $ctrl = new UserController();
