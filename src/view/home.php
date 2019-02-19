@@ -49,7 +49,7 @@
         }
         
       ?>
-      <form action="<?= $_SERVER['PHP_SELF']?>?p=home" method="post">
+      <form action="?p=home" method="post">
         <div class="container-modal z6 vertical-align vehicle-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Ajouter un vehicule</h2>
@@ -68,10 +68,11 @@
       <?php 
           // echo 'salut';
           // var_dump($_REQUEST);
-          // if (isset($_POST['addCar'])){
-          //   $car = new VoitureController();
-          //   $addCar = $car->setCar($_POST);
-          // } else{
+          if (isset($_POST['addCar'])){
+            $car = new VoitureController();
+            $addCar = $car->setCar($_POST);
+          }
+          // else{
           //   echo 'Ne rentre pas dans le if';
           // }
       ?>
