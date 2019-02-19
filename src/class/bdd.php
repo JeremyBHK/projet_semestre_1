@@ -10,11 +10,9 @@
     public function __construct(){
       try {
         if (self::$bdd == false) {
-          echo "initialisation";
           self::$bdd = new PDO('mysql:host='.self::host.";dbname=".self::dbname, self::user, self::pwd);
-          echo 'ok';
         }else{
-          echo "connexion existante";
+          echo "Connexion déjà existante";
         }
       } catch (\Exception $e) {
         die($e->getMessage());
@@ -24,9 +22,6 @@
     public static function prepareExecute($sql, $params){
       $req = self::$bdd->prepare($sql);
       $req->execute($params);
-
-      var_dump($params);
-      // var_dump($req->debugDumpParams());
 
       return $req->rowCount();
     }

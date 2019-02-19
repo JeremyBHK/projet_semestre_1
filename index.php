@@ -6,13 +6,16 @@
   require_once "src/orm/user.php";
   require_once "src/orm/voiture.php";
   require_once "src/orm/domicile.php";
+  require_once "src/orm/travail.php";
   require_once "src/model/userManager.php";
   require_once "src/model/voitureManager.php";
   require_once "src/model/domicileManager.php";
+  require_once "src/model/travailManager.php";
   require_once 'src/controller/default_controller.php';
   require_once 'src/controller/user_controller.php';
   require_once 'src/controller/voiture_controller.php';
   require_once 'src/controller/domicile_controller.php';
+  require_once 'src/controller/travail_controller.php';
 
   $page = ''; // Page par défaut
   if (isset($_GET['p'])) { // Si on reçois un paramètre "p"
@@ -23,7 +26,7 @@
     case 'home':
       $ctrl = new UserController();
       $ctrl->appelRender('home', array());
-      var_dump($_SESSION);
+      // var_dump($_SESSION);
       break;
     case 'onboarding':
       $ctrl = new UserController();

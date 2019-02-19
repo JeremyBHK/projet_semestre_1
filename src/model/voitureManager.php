@@ -15,7 +15,6 @@
                 'marque' => $this->marque,
                 'modele' => $this->modele
             );
-            header('location: ?p=home');
 
             return BDD::insert($sql, $add);
         }

@@ -14,11 +14,8 @@
             $add = array(
                 'adresse' => $this->adresse
             );
-
-            header('location: ?p=home');
-
+ 
             return BDD::insert($sql, $add);
         }
     }
-    
 ?>

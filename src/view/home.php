@@ -37,17 +37,14 @@
         </div>
       </form>
       <?php 
-        if (isset($_POST['upEmail'])) {
+        if (isset($_POST['upEmail'])){
           $user = new userManager();
-          $update_user = $user->findOneByEmail($_SESSION['email']);
+          $user->findOneByEmail($_SESSION['email']);
           var_dump($update_user);
-          $update_user->setEmail($_POST['email']);
-          $update_user->getEmail();
-          $update_user->update();
-        } else {
-          echo 'ne rentre pas dans le if...';
+          $user->setEmail($_POST['email']);
+          $user->getEmail();
+          $user->update();
         }
-        
       ?>
       <form action="?p=home" method="post">
         <div class="container-modal z6 vertical-align vehicle-modal">
@@ -66,15 +63,10 @@
         </div>
       </form>
       <?php 
-          // echo 'salut';
-          // var_dump($_REQUEST);
           if (isset($_POST['addCar'])){
             $car = new VoitureController();
             $addCar = $car->setCar($_POST);
           }
-          // else{
-          //   echo 'Ne rentre pas dans le if';
-          // }
       ?>
       <div class="container-modal z6 vertical-align mdp-modal">
         <div class="modal relative">
@@ -87,7 +79,7 @@
           <input type="submit" value="">
         </div>
       </div>
-      <form action="<?= $_SERVER['PHP_SELF'];?>?p=home" method='post'>
+      <form action="?p=home" method='post'>
         <div class="container-modal z6 vertical-align house-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Ajouter un domicile</h2>
@@ -96,29 +88,35 @@
             <input type="text" name="adresse" id="adresse" class="height25">
             <br>
             <br>
-            <input type="submit" name="addAdresse" value="">
+            <input type="submit" id="addAdresse" name="addAdresse" value="">
           </div>
         </div>
       </form>
       <?php 
-          // if (isset($_POST['addAdresse'])){
-          //   $car = new DomicileController();
-          //   $addCar = $car->setDomicile($_POST);
-          // } else{
-          //   echo 'Marche pas';
-          // }
+          if (isset($_POST['addAdresse'])){
+            $dom = new DomicileController();
+            $domicile = $dom->setDomicile($_POST);
+          }
       ?>
-      <div class="container-modal z6 vertical-align work-modal">
-        <div class="modal relative">
-          <h2 class="marginBottom20">Ajouter un lieu de travail</h2>
-          <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
-          <label for="prénom">Adresse du lieu de travail</label><br>
-          <input id="test-input" type="text" class="height25">
-          <br>
-          <br>
-          <input type="submit" value="">
+      <form action="?p=home" method="post">
+        <div class="container-modal z6 vertical-align work-modal">
+          <div class="modal relative">
+            <h2 class="marginBottom20">Ajouter un lieu de travail</h2>
+            <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <label for="prénom">Adresse du lieu de travail</label><br>
+            <input id="test-input" type="text" name="adresse" id="taff_adresse" class="height25">
+            <br>
+            <br>
+            <input type="submit" name="addTravail" id="addTravail" value="">
+          </div>
         </div>
-      </div>
+      </form>
+      <?php 
+        if (isset($_POST['addTravail'])){
+          $taff = new TravailController();
+          $add_taff = $taff->setTravail($_POST);
+        }
+      ?>
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide statistique__slide relative z4">
