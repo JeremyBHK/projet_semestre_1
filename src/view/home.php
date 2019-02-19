@@ -12,7 +12,7 @@
       <div class="container-modal z6 vertical-align name-modal">
         <div class="modal relative">
           <h2 class="marginBottom20">Modifier le profile</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Prénom</label><br>
           <input type="text" class="height25">
           <br>
@@ -27,7 +27,7 @@
         <div class="container-modal z6 vertical-align mail-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Modifier l'email</h2>
-            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
             <label for="prénom">Adresse email</label><br>
             <input type="email" name="email" id="email" class="height25">
             <br>
@@ -53,7 +53,7 @@
         <div class="container-modal z6 vertical-align vehicle-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Ajouter un vehicule</h2>
-            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
             <label for="prénom">Marque</label><br>
             <input type="text" name="marque" id="marque" class="height25">
             <br>
@@ -78,7 +78,7 @@
       <div class="container-modal z6 vertical-align mdp-modal">
         <div class="modal relative">
           <h2 class="marginBottom20">Modifier le mot de passe</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Mot de passe</label><br>
           <input type="password" class="height25">
           <br>
@@ -90,7 +90,7 @@
         <div class="container-modal z6 vertical-align house-modal">
           <div class="modal relative">
             <h2 class="marginBottom20">Ajouter un domicile</h2>
-            <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+            <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
             <label for="prénom">Adresse du domicile</label><br>
             <input type="text" name="adresse" id="adresse" class="height25">
             <br>
@@ -110,7 +110,7 @@
       <div class="container-modal z6 vertical-align work-modal">
         <div class="modal relative">
           <h2 class="marginBottom20">Ajouter un lieu de travail</h2>
-          <img class="absolute close-modal" src="/ICAN3WEB/projet_semestre_1/src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
+          <img class="absolute close-modal" src="./src/resources/img/ajoute.svg" alt="croix pour fermer le modal">
           <label for="prénom">Adresse du lieu de travail</label><br>
           <input id="test-input" type="text" class="height25">
           <br>
@@ -173,9 +173,9 @@
           </div>
           <div class="swiper-slide home__slide">
             <nav class="z5">
-              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/stat.svg" alt="logo indicateur menant vers les stats">
-              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/logo.svg" alt="logo Swigo">
-              <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/User.svg" alt="logo par defaut de l'utilisateur">
+              <img src="./src/resources/img/stat.svg" alt="logo indicateur menant vers les stats">
+              <img src="./src/resources/img/logo.svg" alt="logo Swigo">
+              <img src="./src/resources/img/User.svg" alt="logo par defaut de l'utilisateur">
             </nav>
             <section class="">
               <article class="">
@@ -183,21 +183,21 @@
                 <div id="geocoder" class="geocoder"></div>
                 <!-- <div class="z3 box-shadow-white"></div> -->
                 <div class="swiper-haut z3">
-                  <img id="menu-reglage" src="/ICAN3WEB/projet_semestre_1/src/resources/img/parametre.svg" alt="engrenage de paramètre">
+                  <img id="menu-reglage" src="./src/resources/img/parametre.svg" alt="engrenage de paramètre">
                 </div>
               </article>
             </section>
             <section class="reglage__section">
               <article class="">
                 <div id="house" class="background-gris-bloc open-modal house__ajout vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
-                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/home-noir.svg" alt="icon de maison">
+                  <img src="./src/resources/img/home-noir.svg" alt="icon de maison">
                   <div class="align-left">
                     <p class="noir size13">Domicile</p>
                     <!-- <p class="blanc size13">26 Rue Flocon</p> -->
                   </div>
                 </div>
                 <div id="work" class="background-gris-bloc open-modal work__ajout vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10">
-                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/work-noir.svg" alt="icon de travail">
+                  <img src="./src/resources/img/work-noir.svg" alt="icon de travail">
                   <div class="align-left">
                     <p class="noir size13">Travail</p>
                     <!-- <p class="blanc size13">21 Rue Erard</p> -->
@@ -210,25 +210,25 @@
                   <div class="container-bloc-connecteur">
                     <div class="container-connecteur marginBottom20">
                       <div class="bloc-container background-gris-bloc">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/domestiqueUE.svg" alt="icon prise domestique UE">
+                        <img src="./src/resources/img/domestiqueUE.svg" alt="icon prise domestique UE">
                         <p class="size12 marginTop5">Domestique UE</p>
                       </div>
                     </div>
                     <div class="container-connecteur marginBottom20">
                       <div class="bloc-container background-gris-bloc">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-2-gris.svg" alt="icon prise domestique UE">
+                        <img src="./src/resources/img/type-2-gris.svg" alt="icon prise domestique UE">
                         <p class="size12 marginTop5">Type 2</p>
                       </div>
                     </div>
                     <div class="container-connecteur marginBottom20">
                       <div class="bloc-container background-gris-bloc">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-3C-gris.svg" alt="icon prise domestique UE">
+                        <img src="./src/resources/img/type-3C-gris.svg" alt="icon prise domestique UE">
                         <p class="size12 marginTop5">Type 3C</p>
                       </div>
                     </div>
                     <div class="container-connecteur marginBottom20">
                       <div class="bloc-container background-gris-bloc">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/type-1-gris.svg" alt="icon prise domestique UE">
+                        <img src="./src/resources/img/type-1-gris.svg" alt="icon prise domestique UE">
                         <p class="size12 marginTop5">Type 1</p>
                       </div>
                     </div>
@@ -239,28 +239,28 @@
                     <h2 class="marginBottom20 align-left">Les vitesses :</h2>
                     <div class="container-type-bloc">
                       <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/standard.svg" alt="icon de travail">
+                        <img src="./src/resources/img/standard.svg" alt="icon de travail">
                         <div class="align-left">
                           <p class="size13 marginBottom10">Standard</p>
                           <p class="size13">2 - 5KW</p>
                         </div>
                       </div>
                       <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/semi-acceleree.svg" alt="icon de travail">
+                        <img src="./src/resources/img/semi-acceleree.svg" alt="icon de travail">
                         <div class="align-left">
                           <p class="size13 marginBottom10">Semi-accélérée</p>
                           <p class="size13">5 - 16KW</p>
                         </div>
                       </div>
                       <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/acceleree.svg" alt="icon de travail">
+                        <img src="./src/resources/img/acceleree.svg" alt="icon de travail">
                         <div class="align-left">
                           <p class="size13 marginBottom10">Accelerée</p>
                           <p class="size13">16 - 30KW</p>
                         </div>
                       </div>
                       <div class="type-bloc background-gris-bloc vertical-align paddingTop10 paddingBottom10 paddingLeft10 paddingRight10 marginBottom20">
-                        <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/rapide.svg" alt="icon de travail">
+                        <img src="./src/resources/img/rapide.svg" alt="icon de travail">
                         <div class="align-left">
                           <p class="size13 marginBottom10">Rapide</p>
                           <p class="size13">30 - 135KW</p>
@@ -299,14 +299,14 @@
                 <div class="underline"></div>
                 <div class="container-vehicle__card">
                   <div class="vehicle__card background-neon-blue vertical-align paddingTop15 paddingBottom15 marginTop20">
-                    <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/car.svg" alt="">
+                    <img src="./src/resources/img/car.svg" alt="">
                     <div class="align-left">
                       <p class="blanc size13 marginBottom10">Peugeot</p>
                       <p class="blanc size13">Ion</p>
                     </div>
                   </div>
                   <div id="vehicle" class="vehicle__card ajout-vehicle__card open-modal vertical-align paddingTop15 paddingBottom15 marginTop20">
-                    <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/add2.svg" alt="">
+                    <img src="./src/resources/img/add2.svg" alt="">
                   </div>
                 </div>
               </article>
@@ -315,18 +315,18 @@
                 <div class="underline"></div>
                 <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10 marginTop20 marginBottom10">
                   <p class="blanc size13 paddingLeft15">1234 5678 1234 5678</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
+                  <img class="paddingRight15" src="./src/resources/img/card.svg" alt="icon de carte bleu">
                 </div>
                 <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
                   <p class="blanc size13 paddingLeft15">Chargemap</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
+                  <img class="paddingRight15" src="./src/resources/img/card.svg" alt="icon de carte bleu">
                 </div>
                 <div class="carte__card vertical-align background-neon-blue paddingTop10 paddingBottom10 marginBottom10">
                   <p class="blanc size13 paddingLeft15">Carte Total</p>
-                  <img class="paddingRight15" src="/ICAN3WEB/projet_semestre_1/src/resources/img/card.svg" alt="icon de carte bleu">
+                  <img class="paddingRight15" src="./src/resources/img/card.svg" alt="icon de carte bleu">
                 </div>
                 <div class="carte__card ajout__card vertical-align paddingTop10 paddingBottom10 marginBottom10">
-                  <img src="/ICAN3WEB/projet_semestre_1/src/resources/img/add2.svg" alt="icon d'ajout">
+                  <img src="./src/resources/img/add2.svg" alt="icon d'ajout">
                 </div>
               </article>
               <article class="">

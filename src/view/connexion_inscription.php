@@ -1,5 +1,5 @@
 <article id="container-conn-ins" class="vertical-align">
-  <img id='logo-conn-ins' src="/ICAN3WEB/projet_semestre_1/src/resources/img/logo-complet.svg" alt="logo Swigo en version entière">
+  <img id='logo-conn-ins' src="./src/resources/img/logo-complet.svg" alt="logo Swigo en version entière">
 
   <div id="switch-conn-ins" class="marginTop50">
     <p id="switch-ins" class="align-right">Inscription</p>
